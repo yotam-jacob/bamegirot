@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- ============================================= -->
+  <!-- SEO + OPEN GRAPH — edit for your business      -->
+  <!-- ============================================= -->
+  <title>במגירות — קונה עתיקות, ציורים ויודאיקה | הערכת עתיקות בוואטסאפ</title>
+  <meta name="description" content="קונה עתיקות, ציורים, יודאיקה ותכולת דירה בכל הארץ. הערכת עתיקות בוואטסאפ, תגובה תוך שעות, ללא התחייבות." />
+  <meta name="keywords" content="קונה עתיקות, הערכת עתיקות, קונה ציורים, קונה תכולת דירה, קונה יודאיקה, קונה עתיקות יד שניה, מכירת עתיקות באינטרנט, נעמן, לפיד" />
+
+  <meta property="og:title" content="במגירות — קונה עתיקות, ציורים ויודאיקה" />
+  <meta property="og:description" content="הערכת עתיקות בוואטסאפ. ליווי אישי בכל הארץ." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+  <meta property="og:url" content="https://www.bamegirot.com/" />
+  <meta property="og:image" content="https://www.bamegirot.com/images/cover.jpg" />
+
+  <!-- Schema.org — helps Google understand the business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "במגירות",
+    "description": "קונה עתיקות, ציורים, יודאיקה ותכולת דירה. הערכת עתיקות בוואטסאפ.",
+    "areaServed": "IL",
+    "telephone": "+972-52-332-1045",
+    "url": "https://www.bamegirot.com/",
+    "makesOffer": [
+      { "@type": "Offer", "name": "קונה עתיקות" },
+      { "@type": "Offer", "name": "קונה ציורים ותמונות" },
+      { "@type": "Offer", "name": "קונה יודאיקה" },
+      { "@type": "Offer", "name": "קונה תכולת דירה" },
+      { "@type": "Offer", "name": "הערכת עתיקות" }
+    ]
+  }
+  </script>
+
+  <!-- Fonts: Frank Ruhl Libre (display serif) + Heebo (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Heebo:wght@300;400;500;700&family=Suez+One&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="images/cover.jpg" />
+
+  <style>
+    /* ============================================= */
+    /* DESIGN TOKENS                                  */
+    /* ============================================= */
+    :root {
+      --color-bg:           #f5efe6;
+      --color-bg-alt:       #ebe1ce;
+      --color-surface:      #fbf7f0;
+      --color-text:         #1a1612;
+      --color-text-muted:   #6b5f52;
+      --color-primary:      #2d4a3e;
+      --color-primary-dark: #1e332b;
+      --color-accent:       #a67c2e;
+      --color-border:       #d4c5ae;
+      --color-whatsapp:     #25D366;
+      --color-whatsapp-dark:#1da851;
+
+      --font-display: 'Suez One', 'Frank Ruhl Libre', Georgia, 'Times New Roman', serif;
+      --font-body:    'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+
+      --shadow-sm: 0 1px 2px rgba(26, 22, 18, 0.06), 0 1px 3px rgba(26, 22, 18, 0.04);
+      --shadow-md: 0 4px 12px rgba(26, 22, 18, 0.08), 0 2px 4px rgba(26, 22, 18, 0.04);
+      --shadow-lg: 0 20px 40px rgba(26, 22, 18, 0.12), 0 8px 16px rgba(26, 22, 18, 0.06);
+
+      --max-width: 1200px;
+      --section-py: clamp(4rem, 10vw, 7rem);
+    }
+
+    /* ============================================= */
+    /* RESET + BASE                                   */
+    /* ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-bg);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect x='3' y='3' width='74' height='74' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.2'/%3E%3Cpath d='M3 22 A19 19 0 0 1 22 3' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.18'/%3E%3Cpath d='M58 3 A19 19 0 0 1 77 22' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.18'/%3E%3Cpath d='M77 58 A19 19 0 0 1 58 77' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.18'/%3E%3Cpath d='M22 77 A19 19 0 0 1 3 58' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.18'/%3E%3Cpath d='M40 20 L60 40 L40 60 L20 40 Z' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.16'/%3E%3Ccircle cx='40' cy='20' r='2' fill='%235b8fa8' opacity='0.13'/%3E%3Ccircle cx='60' cy='40' r='2' fill='%235b8fa8' opacity='0.13'/%3E%3Ccircle cx='40' cy='60' r='2' fill='%235b8fa8' opacity='0.13'/%3E%3Ccircle cx='20' cy='40' r='2' fill='%235b8fa8' opacity='0.13'/%3E%3Ccircle cx='40' cy='40' r='3' fill='none' stroke='%235b8fa8' stroke-width='0.8' opacity='0.15'/%3E%3Ccircle cx='40' cy='40' r='1.2' fill='%235b8fa8' opacity='0.15'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 80px 80px;
+      color: var(--color-text);
+      line-height: 1.65;
+      font-size: 17px;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      /* subtle paper texture via layered gradients */
+      background-image:
+        radial-gradient(ellipse at top right, rgba(166, 124, 46, 0.06), transparent 60%),
+        radial-gradient(ellipse at bottom left, rgba(45, 74, 62, 0.04), transparent 60%);
+      background-attachment: fixed;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 4vw, 2rem);
+    }
+
+    /* ============================================= */
+    /* BUTTONS                                        */
+    /* ============================================= */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 1rem 1.75rem;
+      font-size: 1.05rem;
+      font-weight: 500;
+      border-radius: var(--radius-md);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-whatsapp {
+      background: var(--color-whatsapp);
+      color: white;
+      box-shadow: var(--shadow-md);
+      font-weight: 700;
+    }
+    .btn-whatsapp:hover { background: var(--color-whatsapp-dark); transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+    .btn-whatsapp svg { width: 22px; height: 22px; }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1.5px solid var(--color-primary);
+    }
+    .btn-secondary:hover { background: var(--color-primary); color: var(--color-bg); }
+
+    .btn-lg { padding: 1.2rem 2.25rem; font-size: 1.15rem; }
+
+    /* ============================================= */
+    /* HEADER (minimal — no nav, landing page)        */
+    /* ============================================= */
+    .site-header {
+      padding: 2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(245, 239, 230, 0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .site-header.scrolled { border-bottom-color: var(--color-border); }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      font-family: var(--font-display);
+      font-size: clamp(2.25rem, 8vw, 5rem);
+      font-weight: 400;
+      color: var(--color-primary);
+      letter-spacing: 0.01em;
+      line-height: 1;
+    }
+    .brand-accent { color: var(--color-accent); }
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-primary);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      transition: background 0.15s;
+    }
+    .header-cta:hover { background: var(--color-bg-alt); }
+
+    /* ============================================= */
+    /* HERO                                           */
+    /* ============================================= */
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+    .hero-cover {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .hero-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .hero-cover::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(26, 22, 18, 0.96) 0%,
+        rgba(26, 22, 18, 0.75) 45%,
+        rgba(26, 22, 18, 0.48) 100%
+      );
+    }
+
+    .hero > .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding-top: clamp(3rem, 8vw, 5rem);
+      padding-bottom: clamp(3rem, 8vw, 5rem);
+    }
+
+    .hero-content { max-width: 44rem; }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #2a1a00;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+      padding: 0.45rem 1.2rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #d4a93a 0%, #f5d078 45%, #c49228 100%);
+      border: 1px solid rgba(255, 220, 100, 0.6);
+      box-shadow: 0 2px 12px rgba(180, 130, 20, 0.45), inset 0 1px 0 rgba(255,255,255,0.3);
+      text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.25rem, 6vw, 4rem);
+      color: #fff;
+      margin-bottom: 1.25rem;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.55), 0 2px 18px rgba(0,0,0,0.35);
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--color-accent);
+      position: relative;
+      display: inline-block;
+    }
+    .hero h1 em::after {
+      content: "";
+      position: absolute;
+      bottom: 0.05em;
+      right: 0;
+      left: 0;
+      height: 0.15em;
+      background: var(--color-accent);
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    .hero-sub {
+      font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+      color: rgba(245, 239, 230, 0.88);
+      margin-bottom: 2.25rem;
+      max-width: 36rem;
+      line-height: 1.55;
+      text-shadow: 0 1px 5px rgba(0,0,0,0.5), 0 2px 14px rgba(0,0,0,0.3);
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero .btn-secondary {
+      color: rgba(245, 239, 230, 0.9);
+      border-color: rgba(245, 239, 230, 0.45);
+    }
+    .hero .btn-secondary:hover {
+      background: rgba(245, 239, 230, 0.15);
+      color: #fff;
+      border-color: rgba(245, 239, 230, 0.7);
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.92rem;
+      color: rgba(245, 239, 230, 0.78);
+    }
+    .hero-trust span { display: inline-flex; align-items: center; gap: 0.4rem; }
+    .hero-trust svg { width: 18px; height: 18px; color: var(--color-accent); flex-shrink: 0; }
+
+    /* placeholder when no image yet */
+    .img-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--color-bg-alt), var(--color-surface));
+      color: var(--color-text-muted);
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      text-align: center;
+      padding: 2rem;
+      border: 2px dashed var(--color-border);
+    }
+
+    /* ============================================= */
+    /* SECTION HEADINGS                               */
+    /* ============================================= */
+    .section { padding: var(--section-py) 0; }
+    .section-alt {
+      background-color: var(--color-surface);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect x='3' y='3' width='74' height='74' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.2'/%3E%3Cpath d='M3 22 A19 19 0 0 1 22 3' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.18'/%3E%3Cpath d='M58 3 A19 19 0 0 1 77 22' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.18'/%3E%3Cpath d='M77 58 A19 19 0 0 1 58 77' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.18'/%3E%3Cpath d='M22 77 A19 19 0 0 1 3 58' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.18'/%3E%3Cpath d='M40 20 L60 40 L40 60 L20 40 Z' fill='none' stroke='%235b8fa8' stroke-width='1' opacity='0.16'/%3E%3Ccircle cx='40' cy='20' r='2' fill='%235b8fa8' opacity='0.13'/%3E%3Ccircle cx='60' cy='40' r='2' fill='%235b8fa8' opacity='0.13'/%3E%3Ccircle cx='40' cy='60' r='2' fill='%235b8fa8' opacity='0.13'/%3E%3Ccircle cx='20' cy='40' r='2' fill='%235b8fa8' opacity='0.13'/%3E%3Ccircle cx='40' cy='40' r='3' fill='none' stroke='%235b8fa8' stroke-width='0.8' opacity='0.15'/%3E%3Ccircle cx='40' cy='40' r='1.2' fill='%235b8fa8' opacity='0.15'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 80px 80px;
+    }
+
+    .section-header { text-align: center; margin-bottom: clamp(2.5rem, 6vw, 4rem); max-width: 40rem; margin-inline: auto; }
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--color-primary);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      margin-bottom: 1rem;
+      color: var(--color-text);
+    }
+    .section-desc {
+      font-size: 1.1rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* ============================================= */
+    /* PROMISE BAND                                    */
+    /* ============================================= */
+    .promise-band {
+      background: var(--color-primary);
+      color: rgba(245, 239, 230, 0.92);
+      text-align: center;
+      padding: 1.35rem 0;
+    }
+    .promise-band p {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      line-height: 1.5;
+    }
+    .promise-band p em {
+      font-style: normal;
+      color: var(--color-accent);
+    }
+
+    /* ============================================= */
+    /* HOW IT WORKS — 3 STEPS                         */
+    /* ============================================= */
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 700px) {
+      .steps { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    }
+
+    .step {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem 1.75rem;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .step:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+    .step-number {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .step h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: var(--color-primary);
+    }
+    .step p { color: var(--color-text-muted); font-size: 1rem; }
+
+    /* ============================================= */
+    /* WHAT WE EVALUATE — CATEGORY GRID               */
+    /* ============================================= */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+    @media (min-width: 600px) { .categories { grid-template-columns: repeat(3, 1fr); gap: 1rem; } }
+    @media (min-width: 900px) { .categories { grid-template-columns: repeat(4, 1fr); gap: 1rem; } }
+
+    .category {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .category:hover {
+      background: var(--color-primary);
+      color: var(--color-bg);
+      border-color: var(--color-primary);
+      transform: translateY(-2px);
+    }
+    .category:hover .category-icon { color: var(--color-accent); }
+
+    .category-icon {
+      width: 38px; height: 38px;
+      margin: 0 auto 0.75rem;
+      color: var(--color-primary);
+      transition: color 0.2s;
+    }
+    .category h4 {
+      font-family: var(--font-body);
+      font-size: 0.98rem;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    /* ============================================= */
+    /* SOLD ITEMS GALLERY                              */
+    /* ============================================= */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+    }
+    @media (min-width: 600px) { .gallery { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; } }
+    @media (min-width: 900px) { .gallery { grid-template-columns: repeat(4, 1fr); gap: 1rem; } }
+
+    .gallery-item {
+      aspect-ratio: 1;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--color-bg-alt);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+      display: block;
+    }
+    .gallery-item:hover img { transform: scale(1.06); }
+
+    /* ============================================= */
+    /* WHY US — TRUST SECTION                         */
+    /* ============================================= */
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (min-width: 900px) {
+      .why-grid { grid-template-columns: 0.9fr 1.1fr; gap: 4rem; }
+    }
+
+    .why-portrait {
+      aspect-ratio: 1;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      background: var(--color-bg-alt);
+      max-width: 420px;
+      margin-inline: auto;
+      position: relative;
+    }
+    .why-portrait::before {
+      content: "";
+      position: absolute;
+      inset: -12px;
+      border: 2px solid var(--color-accent);
+      border-radius: var(--radius-lg);
+      opacity: 0.4;
+      z-index: -1;
+    }
+    .why-portrait img { width: 100%; height: 100%; object-fit: cover; }
+
+    .why-content h2 { margin-bottom: 1.25rem; font-size: clamp(1.75rem, 4vw, 2.5rem); }
+    .why-content > p { color: var(--color-text-muted); font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.65; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+    }
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: 2.25rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .stat-label { font-size: 0.92rem; color: var(--color-text-muted); }
+
+    .trust-list { list-style: none; }
+    .trust-list li {
+      padding: 0.65rem 0;
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .trust-list li:last-child { border-bottom: none; }
+    .trust-list svg { width: 22px; height: 22px; color: var(--color-primary); flex-shrink: 0; margin-top: 2px; }
+    .trust-list span { font-size: 1.02rem; }
+
+    /* ============================================= */
+    /* TESTIMONIALS                                   */
+    /* ============================================= */
+    .testimonials {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media (min-width: 800px) { .testimonials { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1100px) { .testimonials { grid-template-columns: repeat(3, 1fr); } }
+
+    .testimonial {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      position: relative;
+    }
+    .testimonial::before {
+      content: "\201D"; /* RTL-aware right-double-quote */
+      position: absolute;
+      top: 0.5rem;
+      left: 1.25rem;
+      font-family: var(--font-display);
+      font-size: 4rem;
+      color: var(--color-accent);
+      opacity: 0.3;
+      line-height: 1;
+    }
+    .testimonial p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+    }
+    .testimonial-author {
+      font-size: 0.92rem;
+      color: var(--color-text-muted);
+      font-weight: 500;
+    }
+
+    /* ============================================= */
+    /* FAQ — ACCORDION                                */
+    /* ============================================= */
+    .faq-list { max-width: 44rem; margin-inline: auto; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+    .faq-question {
+      width: 100%;
+      padding: 1.4rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: start;
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--color-text);
+      gap: 1rem;
+      transition: color 0.15s;
+    }
+    .faq-question:hover { color: var(--color-primary); }
+    .faq-icon {
+      width: 22px; height: 22px;
+      flex-shrink: 0;
+      transition: transform 0.25s;
+      color: var(--color-primary);
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: var(--color-text-muted);
+      line-height: 1.65;
+    }
+    .faq-answer p { padding-bottom: 1.4rem; }
+
+    /* ============================================= */
+    /* FINAL CTA                                      */
+    /* ============================================= */
+    .final-cta {
+      background: var(--color-primary);
+      color: var(--color-bg);
+      text-align: center;
+      padding: clamp(4rem, 10vw, 6rem) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 60%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(166,124,46,0.15), transparent 70%);
+      pointer-events: none;
+    }
+    .final-cta .container { position: relative; }
+    .final-cta h2 {
+      font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+      margin-bottom: 1.25rem;
+      color: var(--color-bg);
+    }
+    .final-cta p {
+      font-size: 1.15rem;
+      margin-bottom: 2.5rem;
+      color: rgba(245, 239, 230, 0.8);
+      max-width: 34rem;
+      margin-inline: auto;
+    }
+    .final-cta .hero-trust { justify-content: center; margin-top: 1.5rem; color: rgba(245,239,230,0.7); }
+    .final-cta .hero-trust svg { color: var(--color-accent); }
+
+    .english-note {
+      margin-top: 1.75rem;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: rgba(245, 239, 230, 0.55);
+      text-align: center;
+      letter-spacing: 0.01em;
+    }
+
+    /* ============================================= */
+    /* FOOTER                                         */
+    /* ============================================= */
+    .site-footer {
+      background: var(--color-primary-dark);
+      color: rgba(245,239,230,0.7);
+      padding: 2.5rem 0;
+      font-size: 0.9rem;
+    }
+    .site-footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .site-footer .brand { color: var(--color-bg); }
+
+    /* ============================================= */
+    /* ANIMATIONS                                     */
+    /* ============================================= */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0;
+      animation: fadeUp 0.7s ease-out forwards;
+    }
+    .reveal-delay-1 { animation-delay: 0.1s; }
+    .reveal-delay-2 { animation-delay: 0.2s; }
+    .reveal-delay-3 { animation-delay: 0.3s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+
+    /* ============================================= */
+    /* FLOATING WHATSAPP BUTTON (mobile only)         */
+    /* ============================================= */
+    @keyframes pulse-ring {
+      0%   { transform: scale(1);   box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+      70%  { transform: scale(1);   box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+      100% { transform: scale(1);   box-shadow: 0 0 0 0   rgba(37, 211, 102, 0); }
+    }
+
+    .whatsapp-float {
+      display: none; /* shown only on mobile via media query below */
+      position: fixed;
+      bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+      right: 1.25rem;
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: var(--color-whatsapp);
+      color: white;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45), 0 2px 8px rgba(0,0,0,0.15);
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      animation: pulse-ring 2.5s ease-out 2s infinite;
+    }
+    .whatsapp-float:hover, .whatsapp-float:active {
+      transform: scale(1.08);
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+      animation: none;
+    }
+    .whatsapp-float svg { width: 32px; height: 32px; flex-shrink: 0; }
+
+    /* ============================================= */
+    /* MOBILE — ≤768px                                */
+    /* ============================================= */
+    @media (max-width: 768px) {
+      /* Show the floating WhatsApp button */
+      .whatsapp-float { display: flex; }
+
+      /* Body padding so float doesn't overlap footer */
+      body { padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px)); }
+
+      /* Stronger gradient on portrait photos — more text area, less sky */
+      .hero-cover::after {
+        background: linear-gradient(
+          to top,
+          rgba(26, 22, 18, 0.97) 0%,
+          rgba(26, 22, 18, 0.82) 40%,
+          rgba(26, 22, 18, 0.55) 100%
+        );
+      }
+
+      /* Stack hero CTA buttons and make them full-width */
+      .hero-ctas { flex-direction: column; }
+      .hero-ctas .btn { width: 100%; justify-content: center; }
+
+      /* Header CTA is redundant — float covers it */
+      .header-cta { display: none; }
+
+      /* Portrait section: don't let it dominate on narrow screens */
+      .why-portrait { max-width: 280px; }
+
+      /* Final CTA paragraph — tighter on small screens */
+      .final-cta p { font-size: 1.05rem; margin-bottom: 2rem; }
+    }
+
+    /* ============================================= */
+    /* MOBILE — ≤480px (small phones)                 */
+    /* ============================================= */
+    @media (max-width: 480px) {
+      /* Step cards — tighter inner padding */
+      .step { padding: 1.75rem 1.25rem; }
+
+      /* Category tiles — tighter */
+      .category { padding: 1.1rem 0.75rem; }
+      .category-icon { width: 32px; height: 32px; }
+
+      /* Stats sit comfortably at full width */
+      .stats { gap: 1rem; padding: 1.25rem; }
+      .stat-number { font-size: 1.9rem; }
+
+      /* Testimonials — slightly tighter */
+      .testimonial { padding: 1.4rem 1.25rem; }
+
+      /* Footer — stack brand + copyright */
+      .site-footer .container { flex-direction: column; text-align: center; gap: 0.4rem; }
+
+      /* FAQ questions — ensure large enough tap target */
+      .faq-question { padding: 1.2rem 0; font-size: 1.05rem; }
+
+      /* Promise band — tighter */
+      .promise-band { padding: 1rem 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================= -->
+  <!-- HEADER                                          -->
+  <!-- ============================================= -->
+  <header class="site-header" id="header">
+    <div class="container">
+      <a href="#" class="brand">במגירות</a>
+      <a href="#whatsapp-cta" class="header-cta">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.007-.371-.009-.57-.009-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        בואו נדבר
+      </a>
+    </div>
+  </header>
+
+  <!-- ============================================= -->
+  <!-- HERO                                            -->
+  <!-- ============================================= -->
+  <section class="hero">
+    <div class="hero-cover">
+      <img src="images/cover.jpg" alt="שירות הערכת עתיקות ותכולת דירה" fetchpriority="high" />
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow reveal">הערכה מקצועית · תגובה תוך שעות</span>
+
+        <h1 class="reveal reveal-delay-1">
+          הערכת שווי עזבונות, סיוע במכירת פריטי וינטאג׳<br/>
+          במומחיות ובכל הארץ
+        </h1>
+
+        <p class="hero-sub reveal reveal-delay-2">
+          ירשתם בית שלם של זכרונות? יש לכם חפצים שאתם לא יודעים מה לעשות איתם?
+          אצלי תמצאו אוזן קשבת, עין מקצועית, ותשובה כנה — בלי לחץ ובלי הפתעות.
+        </p>
+
+        <div class="hero-ctas reveal reveal-delay-3">
+          <a class="btn btn-whatsapp btn-lg"
+             href="https://wa.me/972523321045?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A2%D7%A8%D7%9B%D7%AA%20%D7%A9%D7%95%D7%95%D7%99"
+             target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.007-.371-.009-.57-.009-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            צרו איתי קשר בוואטסאפ
+          </a>
+          <a class="btn btn-secondary btn-lg" href="#how-it-works">איך זה עובד?</a>
+        </div>
+
+        <div class="hero-trust reveal reveal-delay-3">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+            </svg>
+            ללא התחייבות
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+            </svg>
+            שירות לכל הארץ
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+            </svg>
+            תגובה תוך שעות
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- PROMISE BAND                                     -->
+  <!-- ============================================= -->
+  <div class="promise-band">
+    <div class="container">
+      <p>כי כל חפץ ישן מחזיק בתוכו סיפור — ואני כאן כדי למצוא לו אוהבים חדשים.</p>
+    </div>
+  </div>
+
+  <!-- ============================================= -->
+  <!-- HOW IT WORKS                                    -->
+  <!-- ============================================= -->
+  <section class="section section-alt" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">התהליך</span>
+        <h2 class="section-title">איך זה עובד?</h2>
+        <p class="section-desc">תהליך שקוף, בלי הפתעות — מהרגע שתשלחו תמונה ועד שהחפצים מוצאים את ביתם החדש.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">01</span>
+          <h3>מספרים לי מה יש</h3>
+          <p>שולחים תמונות בוואטסאפ, מתקשרים, או נפגשים — לא צריך להתכונן ולא צריך לנקות. אני רוצה לשמוע מה יש לכם, גם אם נראה "ישן ולא שווה כלום".</p>
+        </div>
+        <div class="step">
+          <span class="step-number">02</span>
+          <h3>הערכה מקצועית וכנה</h3>
+          <p>תוך שעות תקבלו תשובה אמיתית — מה שווה, מה פחות, ומה הצעד הבא. ללא התחייבות, וללא ניסיון למכור לכם משהו שלא צריך.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">03</span>
+          <h3>אני מטפלת בכל השאר</h3>
+          <p>מכירה ברשת, מכירת בית פתוחה, או מכירה פומבית — אני ממליצה על הדרך הנכונה ומנהלת את הכל. אתם רק מחכים לבשורות.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SOLD ITEMS GALLERY                               -->
+  <!-- ============================================= -->
+  <section class="section" id="what-we-buy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">העבודות שלי</span>
+        <h2 class="section-title">פריטים שמצאו בית חדש</h2>
+        <p class="section-desc">כל פריט בגלריה עבר דרכי — הוערך, נמכר, ועבר לידיים אוהבות חדשות.</p>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-item"><img src="images/item-01.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-02.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-03.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-04.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-05.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-06.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-07.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-08.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-09.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-10.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-11.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-12.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-13.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-14.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-15.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-16.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-17.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-18.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-19.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-20.jpg" alt="פריט עתיק" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/item-21.jpg" alt="פריט עתיק" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- WHY US                                          -->
+  <!-- ============================================= -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-portrait">
+          <img src="images/portrait.jpg" alt="ליאור — במגירות" />
+        </div>
+
+        <div class="why-content">
+          <span class="section-eyebrow">קצת עליי</span>
+          <h2>עין מקצועית. לב אנושי.</h2>
+          <p>
+            מעל 5 שנים אני מלווה אנשים דרך אחד הרגעים הכי עמוסי-רגשות בחיים — פינוי בית של הורים, ניהול עיזבון, ופרידה מחפצים שמחזיקים בתוכם שנים של זכרונות.
+            כל מי שפונה אליי מקבל יותר מהערכת מחיר — מקבל מישהי שרואה את הסיפור מאחורי כל כוס, כל ציור, כל שידה ישנה, ויודעת לדאוג שכל פריט ימצא בית שיאהב אותו.
+            המטרה שלי תמיד אחת: שכל לקוח יצא מהתהליך עם תחושה שעשה את הדבר הנכון.
+          </p>
+
+          <div class="stats">
+            <div>
+              <div class="stat-number">5+</div>
+              <div class="stat-label">שנות ניסיון</div>
+            </div>
+            <div>
+              <div class="stat-number">עשרות+</div>
+              <div class="stat-label">משפחות שליוותי</div>
+            </div>
+          </div>
+
+          <ul class="trust-list">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>הערכה ראשונית ללא התחייבות — מחליטים ביחד מה הצעד הבא.</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>שקיפות מלאה — תדעו תמיד לאן הולכים הפריטים של יקיריכם.</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>אני מגיעה לכל רחבי הארץ — בוואטסאפ או בפגישה אצלכם בבית.</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>אני מטפלת בכל השאר — אתם לא צריכים להתעסק בכלום.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>להיפרד מתכולת בית הילדות זה טיפ-טיפה עצוב, מוכרחה להודות שבזכות ליאור החפצים קיבלו את הכבוד הראוי להם ועברו לחיות בבתים אוהבים חדשים. כל התהליך נעשה ברגישות ויחד עם זאת במקצועיות והקפדה על הפרטים ובסה"כ נתן תחושה של עזרה והקלה גדולה. הגעתי לליאור במקרה אבל כנראה שאין מקריות — ממליצה בחום!</p>
+          <div class="testimonial-author">— מיכל, רמת השרון</div>
+        </div>
+        <div class="testimonial">
+          <p>החוויה של העבודה עם ליאור היתה מצוינת. בעין המקצועית שלה היא ראתה מעבר לחפצים וידעה לשייך את החפץ הנכון לאדם הנכון ולצרכיו. ההתקשרות שלנו היתה על בסיס המלצות ולא בכדי — לכן אני מרשה לעצמי להמשיך ולהמליץ: תנו לליאור למצוא לחפצים שלכם בתים אוהבים לפחות כמו זה שלכם.</p>
+          <div class="testimonial-author">— ליאת, חדרה</div>
+        </div>
+        <div class="testimonial">
+          <p>ליאור היקרה, עזרת לנו להתמודד עם המשימה הלא פשוטה של פינוי הבית היפה של הורינו האהובים. בזכותך הצלחנו למצוא בית חדש ללא מעט מהרהיטים והחפצים היפים שלהם ולקבל עבורם תמורה ראויה. המון המון תודה!</p>
+          <div class="testimonial-author">— יעל, רחובות</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FAQ                                             -->
+  <!-- ============================================= -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">שאלות נפוצות</span>
+        <h2 class="section-title">שאלות נפוצות</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>מה קורה בפגישה הראשונה?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m-8-8h16"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>מתחילים בשיחה — בוואטסאפ, בטלפון, או פגישה בבית. אני שואלת, מקשיבה, ומבינה בדיוק מה יש. לא צריך להתכונן, לא צריך לנקות, ולא צריך להחליט כלום מראש.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>האם את מגיעה עד הבית?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m-8-8h16"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>כשצריך — כן, אני מגיעה. לרוב מתחילים בתמונות בוואטסאפ, ואם יש הצדקה נקבע ביחד פגישה אצלכם. אני נוסעת לכל רחבי הארץ.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>לאן את מגיעה?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m-8-8h16"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>לכל הארץ. הערכות בוואטסאפ מתאימות לכולם, ולפגישות פיזיות אני מגיעה מהצפון עד לנגב.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>איך תהליך המכירה עובד?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m-8-8h16"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>תלוי בפריט. יש פריטים שהכי טוב למכור ברשת (פייסבוק, קבוצות אספנים), אחרים במכירת בית פתוחה, ונדירים במכירה פומבית. אני ממליצה על הערוץ הנכון ומנהלת את כל התהליך בשבילכם.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>כמה זמן לוקח למכור?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m-8-8h16"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>משתנה לפי סוג הפריט. פריטים פופולריים ברשת יכולים להימכר תוך ימים, מכירות פומביות מתוכננות לכמה שבועות. אני תמיד אעדכן אתכם בציפיות ריאליות מראש — בלי הפתעות.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FINAL CTA                                       -->
+  <!-- ============================================= -->
+  <section class="final-cta" id="whatsapp-cta">
+    <div class="container">
+      <h2>מוכנים לגלות מה מסתתר במגירות?</h2>
+      <p>שלחו תמונה אחת. נשוחח, נכיר, ונמצא יחד את הדרך הכי טובה לחפצים שלכם — בלי לחץ ובלי עלות.</p>
+
+      <a class="btn btn-whatsapp btn-lg"
+         href="https://wa.me/972523321045?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A2%D7%A8%D7%9B%D7%AA%20%D7%A9%D7%95%D7%95%D7%99"
+         target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.007-.371-.009-.57-.009-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        צרו קשר בוואטסאפ
+      </a>
+
+      <div class="hero-trust">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          תגובה תוך שעות
+        </span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          ללא התחייבות
+        </span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+          בכל רחבי הארץ
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FOOTER                                          -->
+  <!-- ============================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand">במגירות</div>
+      <div>ליאור · הערכה ומכירת עתיקות · בכל רחבי הארץ · &copy; 2026</div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button — mobile only, always in view -->
+  <a class="whatsapp-float"
+     href="https://wa.me/972523321045?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%A2%D7%A8%D7%9B%D7%AA%20%D7%A9%D7%95%D7%95%D7%99"
+     target="_blank" rel="noopener"
+     aria-label="שלחו הודעה בוואטסאפ">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.007-.371-.009-.57-.009-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const isOpen = item.classList.contains('open');
+
+        // close others (optional — comment out for multi-open)
+        document.querySelectorAll('.faq-item.open').forEach(open => {
+          if (open !== item) {
+            open.classList.remove('open');
+            open.querySelector('.faq-answer').style.maxHeight = null;
+            open.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        if (isOpen) {
+          item.classList.remove('open');
+          answer.style.maxHeight = null;
+          btn.setAttribute('aria-expanded', 'false');
+        } else {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Sticky header shadow on scroll
+    const header = document.getElementById('header');
+    const onScroll = () => {
+      if (window.scrollY > 20) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
+</body>
+</html>
